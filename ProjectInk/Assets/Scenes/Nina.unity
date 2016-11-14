@@ -120,7 +120,7 @@ SpriteRenderer:
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a3447479e1d0c4448bfe7fdd60782be7, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
@@ -230,7 +230,7 @@ SpriteRenderer:
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a3447479e1d0c4448bfe7fdd60782be7, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
@@ -281,6 +281,11 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   jumpForce: 400
+  markInput: 32
+  inkMarker: {fileID: 50000011088854972, guid: f68d3e5d0bc8e9c429ed647857ffd9e5, type: 2}
+  bulletSpeed: 300
+  maxMarkCooldown: 0.5
+  markCooldown: 0
 --- !u!1 &1732932197
 GameObject:
   m_ObjectHideFlags: 0

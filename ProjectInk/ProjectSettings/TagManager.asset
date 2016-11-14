@@ -42,6 +42,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Splatter
+    uniqueID: 3598711771
+    locked: 0
   - name: Player
     uniqueID: 3476189745
     locked: 0
