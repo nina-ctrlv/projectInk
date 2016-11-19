@@ -102,7 +102,7 @@ GameObject:
   - 61: {fileID: 104453358}
   m_Layer: 8
   m_Name: Ground
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -179,6 +179,7 @@ GameObject:
   - 50: {fileID: 199840799}
   - 61: {fileID: 199840798}
   - 114: {fileID: 199840802}
+  - 114: {fileID: 199840803}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -281,11 +282,29 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   jumpForce: 400
+--- !u!114 &199840803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 199840797}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 153d4a4dc4c6e7144abe80f6b42bb419, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  marks: []
   markInput: 32
   inkMarker: {fileID: 50000011088854972, guid: f68d3e5d0bc8e9c429ed647857ffd9e5, type: 2}
   bulletSpeed: 300
   maxMarkCooldown: 0.5
   markCooldown: 0
+  spikeInput: 49
+  maxSpikeCooldown: 0.5
+  spikeDmg: 0
+  explosionInput: 50
+  maxExplosionCooldown: 0.5
+  explDmg: 0
 --- !u!1 &1732932197
 GameObject:
   m_ObjectHideFlags: 0

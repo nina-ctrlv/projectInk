@@ -27,7 +27,7 @@ GameObject:
   - 114: {fileID: 114000013655872558}
   m_Layer: 0
   m_Name: Marker
-  m_TagString: Untagged
+  m_TagString: Marker
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -90,6 +90,7 @@ MonoBehaviour:
   inkSplatter: {fileID: 1000010290468928, guid: 8fe21fe9c6ad6fe4f89f231162c15522,
     type: 2}
   maxSplatters: 7
+  pa: {fileID: 0}
 --- !u!198 &198000010679114506
 ParticleSystem:
   m_ObjectHideFlags: 1

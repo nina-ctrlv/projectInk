@@ -18,13 +18,6 @@ public class PlayerController : MonoBehaviour {
 	private bool jumpingUp;
 	private float EPSILON = Mathf.Pow (10, -14);
 
-	// mark attack
-	public KeyCode markInput;
-	public Rigidbody2D inkMarker;
-	public float bulletSpeed;
-	public float maxMarkCooldown;
-	public float markCooldown;
-
 
 	// Use this for initialization
 	void Start () {
@@ -35,43 +28,11 @@ public class PlayerController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		Attack();
 		Move();
 	}
 
-	void Attack() {
-		// see if attack pressed
-		if(Input.GetKeyDown(markInput) && markCooldown <= 0) {
-			markCooldown = maxMarkCooldown;
-			ShootMark();
-		}
-		if(markCooldown > 0) {
-			markCooldown -= Time.deltaTime;
-		}
-	}
-
-	void ShootMark() {
-		// shoot projectile
-		Vector2 markerClonePos = transform.position;
-		float dist = .8f;
-		if(!facingRight) {
-			dist *= -1;
-		}
-		markerClonePos.x += dist;
-		markerClonePos.y += .3f;
-
-		Rigidbody2D markerClone = Instantiate(inkMarker, markerClonePos, transform.rotation) as Rigidbody2D;
-
-		if(!facingRight) {
-			markerClone.AddForce (Vector2.left * bulletSpeed);
-			markerClone.gameObject.GetComponent<SpriteRenderer>().flipX = true;
-		}
-		else {
-			markerClone.AddForce (Vector2.right * bulletSpeed);
-			markerClone.gameObject.GetComponent<SpriteRenderer>().flipX = false;
-		}
-
-
+	public bool FacingRight() {
+		return facingRight;
 	}
 
 	void Move() {
