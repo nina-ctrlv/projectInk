@@ -66,7 +66,7 @@ Animator:
   m_GameObject: {fileID: 1000010290468928}
   m_Enabled: 0
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 63751db68ef832e43a2d2548e94b422b, type: 2}
+  m_Controller: {fileID: 9100000, guid: d63e6d704dc9ae540b0615ae2afc7efb, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -99,7 +99,7 @@ SpriteRenderer:
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
   m_Materials:
-  - {fileID: 2100000, guid: 731c02c41a091644e9616fca1fb3adb8, type: 2}
+  - {fileID: 2100000, guid: db57ea0d91c7bc8479ce6b60c94faf09, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
